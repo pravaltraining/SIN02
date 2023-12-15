@@ -69,9 +69,7 @@ function randomImage() {
     setDisplayBlock(getElement('loadingAnimation'));
     const allImages = getElement('employeeDirectorySection').querySelectorAll('img');
     const folderPath = '.\\resources\\empImages';
-
     let loadedImages = 0;
-
     allImages.forEach(function (item) {
         const randomImageNumber = Math.floor(Math.random() * 43) + 1; 
         const imagePath = `${folderPath}\\image${randomImageNumber}.jpg`; 
