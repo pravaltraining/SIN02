@@ -66,7 +66,7 @@ function createUserDataForTesting(){
 
 function randomImage() {
     getElement('employeeDirectorySection').style.display = 'none';
-
+    setDisplayBlock(getElement('loadingAnimation'));
     const allImages = getElement('employeeDirectorySection').querySelectorAll('img');
     const folderPath = '.\\resources\\empImages';
 
